@@ -24,3 +24,5 @@ ejson
 
 #UI
 utilities:spin
+#STYLE
+fezvrasta:bootstrap-material-design

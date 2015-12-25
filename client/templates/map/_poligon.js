@@ -6,9 +6,11 @@ Circle = function (param) {
 
     var _onMouseoverCircle  = function (e) {
         $('text[data-name="'+$(e.target).attr('data-name')+'"]').attr('class','show');
+        Template.Map._activeLocationId.set({_id:$(e.target).attr('data-name')});
     }
     var _onMouseleaveCircle  = function (e) {
         $('text[data-name="'+$(e.target).attr('data-name')+'"]').attr('class','hide');
+        Template.Map._activeLocationId.set({_id:''});
     }
 
     this.init = function () {
@@ -37,7 +39,7 @@ Circle = function (param) {
 
             // append element to parent
             $(_$element).parent().append($(_$element));
-            $(_$element).parent().append(text);
+            //$(_$element).parent().append(text);
 
         }else{
             $(_$element).remove()

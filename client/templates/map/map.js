@@ -1,3 +1,6 @@
+Template.Map.onCreated(function () {
+    Template.Map._activeLocationId = new Blaze.ReactiveVar(null);
+});
 Template.Map.onRendered(function () {
 
     var po = org.polymaps;
@@ -34,4 +37,10 @@ Template.Map.onRendered(function () {
           circle.init();
         }
     }
+
 });
+Template.Map.helpers({
+    'activeLocation': function () {
+        return  Template.Map._activeLocationId.get();
+    }
+})

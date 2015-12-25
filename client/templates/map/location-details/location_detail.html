@@ -1,0 +1,17 @@
+<template name="LocationDetail">
+    {{#if location}}
+      <div class="list-group location-detail">
+          <div class="list-group-item">
+              <div class="row-action-primary">
+                  <i class="material-icons">{{location.Frequency}}</i>
+              </div>
+              <div class="row-content">
+                  <h4 class="list-group-item-heading">{{location.LocationName}}</h4>
+
+                  <p class="list-group-item-text">Frequency:{{location.Frequency}}</p>
+              </div>
+          </div>
+          <div class="list-group-separator"></div>
+      </div>
+    {{/if}}
+</template>

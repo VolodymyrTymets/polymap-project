@@ -2,4 +2,7 @@
     <div id="map" class="map-container">
 
     </div>
+    {{#with activeLocation}}
+        {{> LocationDetail}}
+    {{/with}}
 </template>
