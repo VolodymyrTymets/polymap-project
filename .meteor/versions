@@ -23,6 +23,7 @@ ejson@1.0.7
 es5-shim@4.1.14
 fastclick@1.0.7
 fezvrasta:bootstrap-material-design@0.3.0
+fixtures@0.0.1
 geojson-utils@1.0.4
 hot-code-push@1.0.0
 html-tools@1.0.5
@@ -38,6 +39,7 @@ iron:middleware-stack@1.0.11
 iron:router@1.0.12
 iron:url@1.0.11
 jquery@1.11.4
+jss:path@0.0.3
 launch-screen@1.0.4
 livedata@1.0.15
 logging@1.0.8
@@ -52,6 +54,10 @@ mongo-id@1.0.1
 npm-mongo@1.4.39_1
 observe-sequence@1.0.7
 ordered-dict@1.0.4
+ostrio:meteor-root@1.0.2
+peerlibrary:assert@0.2.5
+peerlibrary:blocking@0.4.3
+peerlibrary:fs@0.1.5
 promise@0.5.1
 random@1.0.5
 reactive-dict@1.1.3
